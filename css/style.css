@@ -1,0 +1,56 @@
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border: 1px dotted black;
+    /* background-color: rgb(116, 116, 221);
+    color: aliceblue; */
+    /* transition-property:none; */
+    /* transition-duration: 5s;
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in; */
+    /* transition-delay: 1s; */
+
+    transition: all 2s linear 1s;
+
+    animation-name: colorAnimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    position: absolute;
+    animation-direction:alternate;
+
+
+
+}
+
+/* .box:hover{
+    background-color: red;
+    color: green;
+    font-size: 20px;
+} */
+
+/* .box:active{
+    background-color: purple;
+    font-size: 40px;
+} */
+
+@keyframes colorAnimation{
+    /* from {background-color: aqua; left: 0px;}
+    to {background-color: green; left: 100%;} */
+
+    0% {background-color: aqua; left: 0px;}
+    50% {background-color: white;}
+    70% {font-size: 50px; background-color: black;}
+    100% {background-color: green; left: 100%;}
+
+    /* from {left: 0px}
+    to { left: 100%;} */
+
+}
